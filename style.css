@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* nav start from here */
+.hr-dot{
+   border: dotted 4px white;
+   border-top: none;
+   margin: 0 auto;
+   width: 150px;
+}
+.nav-bar{
+background-color: #070606;
+position: sticky;
+top: 0;
+z-index: 12;
+}
+.hidden{
+   display: none;
+}
+#menuicon{
+display: block;
+margin-top: 1.5rem;
+}
+.nav-logo{
+text-align: center;
+margin-left: 20px;
+margin-top: 20px;
+/* filter: invert(100%); */
+}
+.nav-logo a img{
+   width: 40px;
+}
+
+ .nav-menu ul{
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+ }
+ .nav-menu ul li{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(39, 75, 92);
+    border-radius: 20px;
+    transition: .3s;
+    /* display: block; */
+ }
+ .nav-menu ul li a{
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+
+
+   
+ }
+ .nav-menu ul li:hover {
+    background-color: #093647;
+
+ }
+ [class*="col-"]{
+    float: left;
+    padding: 10px;
+ }
+ /* for mobile */
+ [class*="col-"]{
+    width: 100%;
+ }
+ .nav-bar::after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+ /* nav-end */
+
+
+ /* home section start from here */
+#home{
+   background: url(img/us.jpg) no-repeat center center / cover;
+ 
+}
+.single-slide{
+   text-align: center;
+   /* padding: 100px; */
+   display: block; 
+}
+.single-slide h1{
+   color: white;
+   /* text-align: center; */
+   font-size: 50px;
+   padding-top: 30px;
+ 	font-family: 'Montserrat', sans-serif;
+}
+.single-slide p{
+   color: #ffffff;
+   font-size: 30px;
+   padding: 30px 0;
+   text-transform: capitalize;
+   /* text-align: center; */
+ 	font-family: 'Fira Sans', sans-serif;
+}
+.home-btn{
+padding: 15px;
+background: rgb(253, 2, 2);
+border: none;
+border-radius: 10px;
+margin-bottom: 30px;
+cursor: pointer;
+transition: .3s;
+}
+.home-btn a{
+color: #fff;
+font-size: medium;
+font-weight: bold;
+text-decoration: none;
+}
+.home-btn:hover{
+    box-shadow: 0 0 20px red;
+}
+/* home section end here */
+
+
+/* about me section start from here */
+#about{
+   overflow: hidden;
+   clear: both;
+   padding: 30px;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   background-color: #369fc9;
+   color: white;
+}
+#about::after{
+   display: table;
+   clear: both;
+   content: "";
+}
+#about h2{
+   text-transform: uppercase;
+   text-align: center;
+   margin-top: 30px;
+   padding-bottom: 10px;
+
+}
+.profile-img{
+   text-align: center;
+}
+.profile-img img{
+/* padding-left: 50px; */
+width: 200px;
+}
+.profile-name h4{
+   text-align: center;
+   margin: 20px auto;
+}
+#about p{
+   text-align: center;
+   font-size: 20x;
+   padding: 10px 0;
+   /* text-transform: capitalize; */
+}
+#about a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.1rem;
+   transition: .3s;
+}
+#about a:hover{
+   color: #2e16b8;
+   text-decoration: underline;
+}
+.cv-button{
+   background-color: #052e2f;
+   color: #fff;
+   border: none;
+   border-radius: 12px;
+   padding: 15px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: .3s;
+}
+.cv-button:hover{
+   color: rgb(173, 166, 166);
+}
+
+
+/* about me section end here */
+
+
+
+/* services section start from here */
+.services-main{
+   padding: 1% 0%;
+  
+
+}
+.card{
+   background-color: #a39e9e;
+   border-radius: 20px;
+   padding: 10px;
+   transition: .3s;
+
+}
+.card:hover{
+   box-shadow: 0 4px 8px 5px black;
+}
+.card-title h2{
+   background-color: #616161;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.card-progress{
+   padding-right: 45px;
+}
+.card-progress li{
+list-style: none;
+font-weight: bolder;
+margin: 30px 10px;
+text-transform: uppercase;
+position: relative;
+}
+.card-progress li::before{
+   content: '';
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+   background-color: #7c8c91;
+   width: 100%;
+   height: 20px;
+   border-radius: 1000px;
+}
+.card-progress li::after{
+   content: "";
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+   background-color: #06b9f0;
+   width: 0;
+   height: 20px;
+   border-radius: 1000px;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-delay: 
+}
+.js::after{
+animation-name: js;
+}
+@keyframes js {
+   to{
+      width: 90%;
+   }
+}
+.node::after{
+animation-name: node;
+}
+@keyframes node {
+   to{
+      width: 85%;
+   }
+}
+.mongo::after{
+animation-name: mongo;
+}
+@keyframes mongo {
+   to{
+      width: 85%;
+   }
+}
+.react::after{
+animation-name: react;
+}
+@keyframes react {
+   to{
+      width: 85%;
+   }
+}
+.api::after{
+animation-name: api;
+}
+@keyframes api {
+   to{
+      width: 80%;
+   }
+}
+.express::after{
+animation-name: ex;
+}
+@keyframes ex {
+   to{
+      width: 80%;
+   }
+}
+.ps::after{
+animation-name: ps;
+}
+@keyframes ps {
+   to{
+      width: 60%;
+   }
+}
+.services-main::after{
+   content: "";
+   clear: both;
+   display: table;
+
+   }
+/* services section end here */
+
+
+
+/* contact section start from here */
+#contact{
+  background-color: #093647;
+}
+.from{
+   padding: 1% 7%;
+   color: #fff;
+   text-align: center;
+}
+.from h2{
+   text-align: center;
+   text-transform: uppercase;
+   padding: 10px 0;
+}
+.from p{
+   padding: 10px 5px;
+}
+.from input, textarea{
+   width: 100%;
+   padding: 10px;
+   font-size: 1rem;
+   text-align: center;
+   border: none;
+   border-radius: 5px;
+   resize: none;
+}
+.from button{
+   border: none;
+   border-radius: 5px;
+   padding: 15px;
+   margin: 10px;
+   width: 150px;
+   font-size: medium;
+   font-weight: bolder;
+   /* background-color: rgba(199, 155, 11, 0.575);
+   color: white; */
+   cursor: pointer;
+   transition: .3s;
+}
+.from button:hover{
+ box-shadow: 0 2px 4px whitesmoke;
+}
+.icon{
+   text-align: center;
+}
+.icon h2{
+   padding: 10px 0;
+   color: #fff;
+}
+.icon-contact .btn{
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 32px;
+   padding: 10px;
+   margin: 10px;
+   width: 50px;
+}
+.icon-contact .btn:hover{
+   background-color: gray;
+}
+ #contact::after{
+   display: table;
+   clear: both;
+   content: "";
+} 
+/* contact section end here */
+
+
+/* footer section start from here */
+footer{
+   background-color: #000;
+   color: #fff;
+}
+
+.footer a{
+color: white;
+text-decoration: none;
+font-weight: 900;
+}
+.footer-list{
+   padding: 15px;
+}
+.footer-list ul li{
+   list-style: none;
+   padding: 15px 5px;
+}
+.footer-deals{
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   
+}
+.footer-deals h2{
+   padding: 10px 0;
+}
+
+.footer-deals a{
+   padding: 10px 5px;
+}
+
+.footer-desc{
+   clear: both;
+   padding: 15px 0;
+   text-align: center;
+   width: 100%;
+   display: block;
+}
+.footer-desc p{
+   margin-top: 10px;
+   font-size: 1.1rem;
+   padding: 10px 0;
+   font-weight: bolder;
+}
+.love{
+   color: red;
+   font-size: 5vh;
+   font-weight: bolder;
+}
+
+footer::after{
+   display: table;
+   clear: both;
+   overflow: hidden;
+   content: "";
+}
+
+/* footer section end here */

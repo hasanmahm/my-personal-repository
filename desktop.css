@@ -1,0 +1,99 @@
+/* nav start from here */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+header{
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+.hidden{
+   display: block;
+}
+#menuicon{
+   display: none;
+}
+.nav-logo{
+    text-align: start;
+    margin: 0;
+    padding:20px 35px;
+    }
+.nav-menu ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+ }
+ .nav-menu ul li{
+    border-radius: 0;
+    background-color: transparent;
+ }
+
+ .nav-menu ul li:hover{
+   background-color: transparent;
+ }
+ .nav-menu ul li:hover > a{
+    color: #1b51c5;
+    text-decoration: underline;
+ }
+  /* nav-end */
+
+
+ /* home section start from here */
+
+.single-slide{
+   text-align: center;
+   padding: 200px;
+   display: block; 
+}
+
+/* home section end here */
+
+
+
+/* about me section start from here */
+.profile-name{
+ padding-top: 30px;
+}
+.profile-img{
+   width: 41.66%;
+   float: right;
+}
+.profile-name{
+   width: 58.33%;
+   float: left;
+}
+#about p{
+   text-align: left;
+}
+
+/* about me section end here */
+
+
+
+/* contat section start from here */
+
+
+.icon{
+position: relative;
+}
+.icon-contact{
+   position: absolute;
+   left: 40%;
+   top: 90%;
+   transform: translate(-50% -50%);
+   display: grid;
+   grid-template-columns: auto auto;  
+}
+
+
+/* contat section end  here */
